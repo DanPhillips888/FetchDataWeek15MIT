@@ -23,7 +23,7 @@ const PageSizeSelector = ({ onPageSizeChange }) => {
   let sizeOptions = [5, 10, 15, 20];
   const sizeOptionButtons = sizeOptions.map(itemsPerPage => { 
     return (
-        <Button className="page-size" onClick={onPageSizeChange}>
+        <Button key={itemsPerPage} className="page-size" onClick={onPageSizeChange}>
           {itemsPerPage}
         </Button>
     );
